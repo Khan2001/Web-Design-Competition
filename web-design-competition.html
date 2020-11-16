@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,28 +10,50 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">网站名称</a><!--补网址，改名称-->
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">网站名称</a><!--补网址，改名称-->
+                    </div>
+                    <div> 
+                        <ul id="navbar-title" class="nav navbar-nav navbar-left">
+                            <li><a href="#">首页</a></li><!--补网址-->
+                            <li><a href="#">最新</a></li><!--补网址-->
+                            <li><a href="#">个人</a></li><!--补网址-->
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> 创作中心</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li><!--补网址-->
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li><!--补网址-->
+                        </ul>
+                        <form id="navbar-search" action="##" class="navbar-form navbar-right" rol="search">
+                            <div class="form-group">
+                                <input id="navbar-search-text" type="text" class="form-control" placeholder="请输入关键词" />
+                            </div>
+                        <button id="navbar-search-button" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button><!--图标待修改-->
+                        </form>
+                    </div>
+                </nav>
+            </div>
         </div>
-        <div> 
-            <ul id="navbar-title" class="nav navbar-nav navbar-left">
-                <li><a href="#">首页</a></li><!--补网址-->
-                <li><a href="#">最新</a></li><!--补网址-->
-                <li><a href="#">个人</a></li><!--补网址-->
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-edit"></span> 创作中心</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li><!--补网址-->
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li><!--补网址-->
-            </ul>
-            <form id="navbar-search" action="##" class="navbar-form navbar-left" rol="search">
-                <div class="form-group">
-                    <input id="navbar-search-text" type="text" class="form-control" placeholder="请输入关键词" />
+        <div class="row clearfix">
+            <div id="left"  class="col-md-9 column">
+            </div>
+            <div id="right" class="col-md-3 column">
+                <div id="list-authors" class="panel panel-default">
+                    <div id="list-authors-title" class="panel-heading"><span class="glyphicon glyphicon-flag"></span>作者榜</div>
+                    <ul class="list-group">
+                        <li id="authors" class="list-group-item"><a href="#">xxx</a></li><!--待修改-->
+                        <li id="authors" class="list-group-item"><a href="#">xxx</a></li><!--待修改-->
+                        <li id="authors" class="list-group-item"><a href="#">xxx</a></li><!--待修改-->
+                        <li id="complete-list" class="list-group-item"><a href="#">完整榜单 <span class="glyphicon glyphicon-chevron-right"></span></a></li><!--待修改-->
+                    </ul>
                 </div>
-            <button id="navbar-search-button" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button><!--图标待修改-->
-            </form>
+            </div>
         </div>
+    </div>
 </body>
 </html>
