@@ -1,7 +1,12 @@
-
+body{
+    background-color: #f4f5f5;
+    padding-top: 5%;
+}
 .navbar{
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+    border-radius: 10px;
 }
 #navbar-title li{
     &:hover{
@@ -9,13 +14,46 @@
     }
 }
 #navbar-search{
-    padding-left: 325px;
+    padding-right: 5%;
 }
 #navbar-search-button{
     border: 0;
 }
 #navbar-search-text{
-    border: 0;
-    width: 250px;
+    width: 125%;
+    &:focus{
+        border-color: darkturquoise;
+    }
 }
+.container{
+    width: 70%;
+}
+#left{
+    background-color: white;
+    height: 1000px;
+}
+#right{
 
+    #list-authors{  
+        border: 1px solid hsla(0,0%,59.2%,.1);
+        a{
+            text-decoration: none;
+        }
+        #list-authors-title{
+            background-color:white ;
+            color:  rgb(107, 107, 107);
+            font-size: 20px;
+            border-bottom: 1px solid hsla(0,0%,59.2%,.1);
+        }
+        #authors{
+            &:hover{
+                background-color:hsla(0,0%,84.7%,.1);
+            }
+            border: 0;
+        }
+        #complete-list
+        {
+            border-top: 1px solid hsla(0,0%,59.2%,.1);
+        }
+    }   
+}
