@@ -8,19 +8,48 @@ body {
   background-color: white;
   border-radius: 10px;
 }
-#navbar-title li:hover {
-  background-color: darkgray;
+.navbar #web-name button {
+  font-size: 125%;
+  border: 0;
+  background-color: transparent;
+  color: #D14E5B;
+  padding-top: 10%;
 }
-#navbar-search {
+.navbar #web-name h3 {
+  margin-top: 0;
+}
+.navbar #navbar-title-left button {
+  padding-top: 27% ;
+  font-size: 125%;
+  border: 0;
+  background-color: transparent;
+}
+.navbar #navbar-title-left button:hover {
+  color: #D14E5B;
+}
+.navbar #navbar-title-right button {
+  padding-top: 27% ;
+  font-size: 125%;
+  border: 0;
+  background-color: transparent;
+}
+.navbar #navbar-title-right button:hover {
+  color: #D14E5B;
+}
+.navbar #navbar-title-right button {
+  padding-top: 17px;
+  font-size: 100%;
+}
+.navbar #navbar-search {
   padding-right: 5%;
 }
-#navbar-search-button {
+.navbar #navbar-search-button {
   border: 0;
 }
-#navbar-search-text {
+.navbar #navbar-search-text {
   width: 125%;
 }
-#navbar-search-text:focus {
+.navbar #navbar-search-text:focus {
   border-color: darkturquoise;
 }
 .container {
@@ -28,7 +57,33 @@ body {
 }
 #left {
   background-color: white;
-  height: 1000px;
+  height: auto;
+  padding: 0%;
+}
+#left #context .list-group-item {
+  border: 1px solid hsla(0, 0%, 59.2%, 0.1);
+  padding-left: 3%;
+  padding-right: 3%;
+}
+#left #context .list-group-item:hover {
+  background-color: hsla(0, 0%, 84.7%, 0.1);
+}
+#left #context .list-group-item a {
+  color: black;
+}
+#left #context .list-group-item p {
+  color: #b2bac2;
+  width: 100%;
+}
+#left #context .list-group-item span {
+  color: #b2bac2;
+  font-size: 90%;
+}
+#left #context .list-group-item button {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid hsla(0, 0%, 59.2%, 0.1);
 }
 #right #list-authors {
   border: 1px solid hsla(0, 0%, 59.2%, 0.1);
@@ -41,13 +96,58 @@ body {
   color: #6b6b6b;
   font-size: 20px;
   border-bottom: 1px solid hsla(0, 0%, 59.2%, 0.1);
+  text-align: center ;
 }
 #right #list-authors #authors {
   border: 0;
+}
+#right #list-authors #authors button {
+  border: 0;
+  background-color: transparent;
+  width: 100%;
 }
 #right #list-authors #authors:hover {
   background-color: hsla(0, 0%, 84.7%, 0.1);
 }
 #right #list-authors #complete-list {
   border-top: 1px solid hsla(0, 0%, 59.2%, 0.1);
+}
+#right #list-authors #complete-list button {
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+  color: #007fff;
+}
+#register {
+  padding-top: 6%;
+}
+#register .modal-content {
+  width: 65%;
+  margin-left: 20%;
+}
+#register .text-right {
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+#login {
+  padding-top: 6%;
+}
+#login .modal-content {
+  width: 65%;
+  margin-left: 20%;
+}
+#login .text-right {
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+#change-password {
+  padding-top: 6%;
+}
+#change-password .modal-content {
+  width: 65%;
+  margin-left: 20%;
+}
+#change-password .text-right {
+  padding-bottom: 5%;
+  padding-top: 3%;
 }
