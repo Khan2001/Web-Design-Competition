@@ -8,37 +8,47 @@ body {
   background-color: white;
   border-radius: 10px;
 }
-.navbar #web-name button {
+.navbar #web-name {
+  padding-top: 1%;
+}
+.navbar #web-name a {
   font-size: 125%;
-  border: 0;
-  background-color: transparent;
   color: #D14E5B;
-  padding-top: 10%;
+  text-decoration: none;
 }
 .navbar #web-name h3 {
   margin-top: 0;
 }
-.navbar #navbar-title-left button {
-  padding-top: 27% ;
+.navbar #navbar-title-left a {
+  padding-top: 27%;
   font-size: 125%;
   border: 0;
   background-color: transparent;
 }
-.navbar #navbar-title-left button:hover {
+.navbar #navbar-title-left a:hover {
   color: #D14E5B;
 }
-.navbar #navbar-title-right button {
-  padding-top: 27% ;
+.navbar #navbar-title-right a {
+  padding-top: 27%;
   font-size: 125%;
+  border: 0;
+  background-color: transparent;
+}
+.navbar #navbar-title-right a:hover {
+  color: #D14E5B;
+}
+.navbar #navbar-title-right a {
+  font-size: 100%;
+  padding-top: 16%;
+}
+.navbar #navbar-title-right button {
+  font-size: 100%;
+  padding-top: 27% ;
   border: 0;
   background-color: transparent;
 }
 .navbar #navbar-title-right button:hover {
   color: #D14E5B;
-}
-.navbar #navbar-title-right button {
-  padding-top: 17px;
-  font-size: 100%;
 }
 .navbar #navbar-search {
   padding-right: 5%;
@@ -99,24 +109,28 @@ body {
   text-align: center ;
 }
 #right #list-authors #authors {
+  text-align: center;
   border: 0;
 }
-#right #list-authors #authors button {
-  border: 0;
-  background-color: transparent;
+#right #list-authors #authors a {
   width: 100%;
 }
 #right #list-authors #authors:hover {
   background-color: hsla(0, 0%, 84.7%, 0.1);
 }
 #right #list-authors #complete-list {
+  text-align: center;
   border-top: 1px solid hsla(0, 0%, 59.2%, 0.1);
 }
-#right #list-authors #complete-list button {
-  border: 0;
-  background-color: transparent;
-  width: 100%;
+#right #list-authors #complete-list a {
   color: #007fff;
+}
+#right .pictures {
+  padding-bottom: 8%;
+}
+#right .pictures img {
+  max-width: 100%;
+  max-height: 100%;
 }
 #register {
   padding-top: 6%;
@@ -129,6 +143,9 @@ body {
   padding-bottom: 5%;
   padding-top: 3%;
 }
+#register input {
+  width: 80%;
+}
 #login {
   padding-top: 6%;
 }
@@ -140,14 +157,6 @@ body {
   padding-bottom: 5%;
   padding-top: 3%;
 }
-#change-password {
-  padding-top: 6%;
-}
-#change-password .modal-content {
-  width: 65%;
-  margin-left: 20%;
-}
-#change-password .text-right {
-  padding-bottom: 5%;
-  padding-top: 3%;
+#login input {
+  width: 80%;
 }

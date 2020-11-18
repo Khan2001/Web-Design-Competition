@@ -2,6 +2,9 @@ body{
     background-color: #f4f5f5;
     padding-top: 5%;
 }
+.container{
+    width: 65%;
+}
 .navbar{
     padding-left: 10%;
     padding-right: 10%;
@@ -59,13 +62,34 @@ body{
         }
     }
 }
-.container{
-    width: 70%;
-}
 #left{
     background-color: white;
     height: auto;
     padding: 0%;
+    #information-presentation{
+        border-bottom: 20px solid #f4f5f5;
+        #username{
+            padding-left: 10%;
+        }
+        #signature{
+            padding-left: 10%;
+        }
+        #change-information{
+            padding-bottom: 5%;
+            padding-left: 1%;
+            button{
+                color: #D14E5B;
+                border: 1px solid;
+                background-color: #fff;
+                border-radius: 4px;
+                outline: none;
+                cursor: pointer;
+                &:hover{
+                    opacity: .8
+                }
+            }
+        }
+    }
     #context{
         .list-group-item{
             border: 1px solid hsla(0,0%,59.2%,.1);
@@ -90,62 +114,52 @@ body{
                 cursor: pointer;
                 outline: none;
                 border: 2px solid hsla(0,0%,59.2%,.1);
+                color: #b2bac2;
             }
         }
     }
 }
 #right{
-    #list-authors{  
-        border: 1px solid hsla(0,0%,59.2%,.1);
-        a{
-            text-decoration: none;
-        }
-        #list-authors-title{
-            background-color:white ;
-            color:  rgb(107, 107, 107);
-            font-size: 20px;
-            border-bottom: 1px solid hsla(0,0%,59.2%,.1);
-            text-align: center ;
-        }
-        #authors{
-            text-align: center;
-            a{
-                width: 100%;
-            }
-            &:hover{
-                background-color:hsla(0,0%,84.7%,.1);
-            }
-            border: 0;
-        }
-        #complete-list
-        {
-            text-align: center;
-            border-top: 1px solid hsla(0,0%,59.2%,.1);
-            a{
-                color: #007fff;
-            }
-        }
-    } 
-    .pictures{
-        padding-bottom: 8%;
-        img{
-            max-width: 100%;
-            max-height: 100%;
-        }
-    }  
+    /*#compliment
+    {
+        background-color: white;
+        text-align: center;
+        padding-top: 12%;
+        padding-bottom: 12%;
+    }
+    #comment{
+        #compliment();
+        margin-top: 8%;
+    }*/
+    #article-number{
+        background-color: white;
+        text-align: center;
+        padding-top: 12%;
+        padding-bottom: 12%;
+    }
+}
+#informations{
+    padding-top: 6%;
+    .modal-content{
+        width: 65%;
+        margin-left: 20%;
+    }
+}
+#change-password{
+    #informations();
 }
 #register{
     padding-top: 6%;
     .modal-content{
         width: 65%;
         margin-left: 20%;
+        input{
+            width: 80%;
+        }
     }
     .text-right{
         padding-bottom: 5%;
         padding-top: 3%;
-    }
-    input{
-        width: 80%;
     }
 }
 #login{
