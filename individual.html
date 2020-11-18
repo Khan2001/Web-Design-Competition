@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="individual.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <!--导航栏-->
+                <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                        <div id="web-name" class="navbar-header">
+                            <a href="web-design-competition.html">
+                                <h3>四史学习站</h3>
+                            </a>
+                        </div>
+                        <div>
+                            <ul id="navbar-title-left" class="nav navbar-nav navbar-left">
+                                <li><a href="web-design-competition.html">首页</a></li>
+                                <li><a href="#">最新</a></li>
+                                <li><a href="#">个人</a></li>
+                            </ul>
+                            <ul id="navbar-title-right" class="nav navbar-nav navbar-right">
+                                <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> 创作中心</a></li>
+                                <li><button id="register-button" data-toggle="modal" data-target="#register"><span
+                                            class="glyphicon glyphicon-user"></span> 注册</button></li>
+                                <li><button id="login-button" data-toggle="modal" data-target="#login"><span
+                                            class="glyphicon glyphicon-log-in"></span> 登录</button></li>
+                            </ul>
+                            <form id="navbar-search" action="##" class="navbar-form navbar-right" rol="search">
+                                <div class="form-group">
+                                    <input id="navbar-search-text" type="text" class="form-control"
+                                        placeholder="请输入关键词" />
+                                </div>
+                                <button id="navbar-search-button" type="submit" class="btn btn-default"><span
+                                        class="glyphicon glyphicon-search"></span></button>
+
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <!--主区域-->
+            <div id="left" class="col-md-9 column">
+                <div id="information-presentation" class="row clearfix">
+                    <div class="col-md-12 column">
+                        <div class="row clearfix">
+                            <div id="username" class="col-md-12 column">
+                                <h1>
+                                    用户名
+                                </h1>
+                            </div>
+                            <div id="signature" class="col-md-12 column">
+                                <p><span class="glyphicon glyphicon-tag"></span> 深入学习“四史”，坚守初心使命</p>
+                                <p><span class="glyphicon glyphicon-barcode"> 自我介绍自我介绍</span></p>
+                            </div>
+                            <div id="change-information" class="col-md-offset-8 col-md-4 column">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#informations">编辑个人资料</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#change-password">修改密码</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#">文章</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="article" class="row clearfix">
+                    <div class="col-md-12 column">
+                        <div id="context">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    </span><span>发表时间</span>
+                                    <a href="#">
+                                        <h4><b>文章标题</b></h4>
+                                    </a>
+                                    <p>文章内容概要文章内容概要文章内容概要文章内容概要文章内容概要文章内容概要文章内容概要文章内容概要文章内容概要</p>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><span
+                                                class="glyphicon glyphicon-edit"></span> 修改</button>
+                                        <button type="button" class="btn btn-default"><span
+                                                class="glyphicon glyphicon-trash"></span> 删除</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--右侧小区域-->
+            <div id="right" class="col-md-3 column">
+                <!--<div id="compliment">
+                    <div id="compliment-title"><span class="glyphicon glyphicon-thumbs-up"></span> 总获赞数</div>
+                    <div id="compliment-numbers">123</div>
+                </div>
+                <div id="comment">
+                    <div id="comment-title"><span class="glyphicon glyphicon-comment"></span> 总评论数</div>
+                    <div id="comment-numbers">123</div>
+                </div>-->
+                <div id="article-number">
+                    <div><span class="glyphicon glyphicon-book" style="color: #D14E5B;"></span> 总文章数</div>
+                    <div id="article-number-data">123</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="informations" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">编辑个人资料</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                        <div class="form-group">
+                            <label for="">昵称</label>
+                            <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">个性签名</label>
+                            <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">个人介绍</label>
+                            <input class="form-control" type="text" placeholder="">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" type="submit">提交更改</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--修改密码-->
+    <div id="change-password" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>×</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center"><b>修改密码</b></h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                        <div class="form-group">
+                            <label for="">原密码</label>
+                            <input class="form-control" type="password" id="password" placeholder=""><span id="password-error" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">再次输入原密码</label>
+                            <input class="form-control" type="password" id="verify-password" placeholder=""><span id="verify-password-error" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">新密码</label>
+                            <input class="form-control" type="password" id="new-password" placeholder="至少6位字母或数字"><span id="nwe-password-error" class="label label-danger"></span>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-primary" type="submit">修改密码</button>
+                            <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--注册窗口-->
+    <div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>×</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center"><b>注册</b></h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                        <div class="form-group">
+                            <label for="">用户名</label>
+                            <input class="form-control" type="text" id="username" placeholder="6-15位字母或数字"><span id="username-error" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">密码</label>
+                            <input class="form-control" type="password" id="password" placeholder="至少6位字母或数字"><span id="password-error" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">再次输入密码</label>
+                            <input class="form-control" type="password" id="verify-password" placeholder="至少6位字母或数字"><span id="verify-password-error" class="label label-danger"></span>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-primary" type="submit">提交</button>
+                            <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                        </div>
+                        <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>×</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center"><b>登录</b></h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                        <div class="form-group">
+                            <label for="">用户名</label>
+                            <input class="form-control" type="text" id="username" placeholder=""><span id="username-error" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">密码</label>
+                            <input class="form-control" type="password" id="password" name="password" placeholder=""><span id="password-error" class="label label-danger"></span>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-primary" type="submit">登录</button>
+                            <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                        </div>
+                        <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
