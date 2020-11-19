@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="article.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <!--导航栏-->
+                <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                        <div id="web-name" class="navbar-header">
+                            <a href="web-design-competition.html">
+                                <h3>四史学习站</h3>
+                            </a>
+                        </div>
+                        <div>
+                            <ul id="navbar-title-left" class="nav navbar-nav navbar-left">
+                                <li><a href="web-design-competition.html">首页</a></li>
+                                <li><a href="#">最新</a></li>
+                                <li><a href="individual.html">个人</a></li>
+                            </ul>
+                            <ul id="navbar-title-right" class="nav navbar-nav navbar-right">
+                                <li><a href="creative-center.html"><span class="glyphicon glyphicon-pencil"></span>
+                                        创作中心</a></li>
+                                <li><button id="register-button" data-toggle="modal" data-target="#register"><span
+                                            class="glyphicon glyphicon-user"></span> 注册</button></li>
+                                <li><button id="login-button" data-toggle="modal" data-target="#login"><span
+                                            class="glyphicon glyphicon-log-in"></span> 登录</button></li>
+                            </ul>
+                            <form id="navbar-search" action="##" class="navbar-form navbar-right" rol="search">
+                                <div class="form-group">
+                                    <input id="navbar-search-text" type="text" class="form-control"
+                                        placeholder="请输入关键词" />
+                                </div>
+                                <button id="navbar-search-button" type="submit" class="btn btn-default"><span
+                                        class="glyphicon glyphicon-search"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="article" class="row clearfix">
+                <div class="col-md-12 column">
+                    <h4 id="author">作者</h4></span>
+                    <p id="time">发表时间</p>
+                    <h1 id="article-title">文章标题</h1>
+                    <p id="article-concent">文章内容</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--注册窗口-->
+    <div id="register" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>×</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center"><b>注册</b></h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                        <div class="form-group">
+                            <label for="">用户名</label>
+                            <input class="form-control" type="text" id="username" placeholder="6-15位字母或数字"><span
+                                id="username-error" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">密码</label>
+                            <input class="form-control" type="password" id="password" placeholder="至少6位字母或数字"><span
+                                id="password-error" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">再次输入密码</label>
+                            <input class="form-control" type="password" id="verify-password"
+                                placeholder="至少6位字母或数字"><span id="verify-password-error"
+                                class="label label-danger"></span>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-primary" type="submit">提交</button>
+                            <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                        </div>
+                        <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录窗口 -->
+    <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>×</span>
+                    </button>
+                </div>
+                <div class="modal-title">
+                    <h1 class="text-center"><b>登录</b></h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="">
+                        <div class="form-group">
+                            <label for="">用户名</label>
+                            <input class="form-control" id="usename" name="username" type="text" placeholder=""><span
+                                id="username-error" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">密码</label>
+                            <input class="form-control" type="password" id="password" name="password"
+                                placeholder=""><span id="password-error" class="label label-danger"></span>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-primary" type="submit">登录</button>
+                            <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                        </div>
+                        <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

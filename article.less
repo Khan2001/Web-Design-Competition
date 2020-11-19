@@ -1,0 +1,100 @@
+body{
+    background-color: #f4f5f5;
+    padding-top: 5%;
+    background-attachment: fixed;
+    background-image: url("background1.jpg");
+    background-size: 100% 100%;
+}
+.container{
+    width: 60%;
+}
+.navbar{
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+    border-radius: 10px;
+    #web-name{
+        padding-top: 1%;
+        a{
+            font-size: 125%;   
+            color: #D14E5B;
+            text-decoration: none;
+        }
+        h3{
+            margin-top: 0;
+        }
+    }
+    #navbar-title-left{
+        a{
+            padding-top:27%;
+            font-size: 125%;
+            border: 0;
+            background-color: transparent;
+            &:hover{
+                color: #D14E5B;
+            }  
+        }
+    } 
+    #navbar-title-right{
+        #navbar-title-left();
+        a{
+            font-size: 100%;
+            padding-top: 16%;
+            color: #D14E5B;
+        }
+        button
+        {
+            font-size: 100%;
+            padding-top:27% ;
+            border: 0;
+            background-color: transparent;
+            &:hover{
+                color: #D14E5B;
+            }  
+        }
+    }
+    #navbar-search{
+        padding-right: 5%;
+    }
+    #navbar-search-button{
+        border: 0;
+    }
+    #navbar-search-text{
+        width: 125%;
+        &:focus{
+            border-color: darkturquoise;
+        }
+    }
+}
+#article{
+    background-color: white;
+    #author{
+        font-weight: 600;
+    }
+    #time{
+        color: #909090;
+    }
+    #article-title{
+        font-weight: 700;
+    }
+    #article-concent{
+        font-size: 120%;
+    }
+}
+#register{
+    padding-top: 6%;
+    .modal-content{
+        width: 65%;
+        margin-left: 20%;
+    }
+    .text-right{
+        padding-bottom: 5%;
+        padding-top: 3%;
+    }
+    input{
+        width: 80%;
+    }
+}
+#login{
+    #register();
+}
